@@ -302,7 +302,7 @@ h1 {
     </div>
     <div class="actions" id="actions">
       <button class="btn" id="wish" type="button">Make a wish</button>
-      <p class="wish-note rv" id="note">Wish sent. Sana matupad lahat ng hinihiling mo.</p>
+      <p class="wish-note rv" id="note"> Crizel sana matupad lahat ng hinihiling mo, totoo sana lahat lahat yun matupad.</p>
     </div>
   </article>
 </div>
@@ -324,10 +324,10 @@ h1 {
   /* The letter */
   var LINES = [
     'Happy Birthday! I hope today feels soft, bright, and a little bit magical, just the way you deserve.',
-    'Always remember that you are <b>special</b>. You are special because you are you, and you never have to prove it.',
-    'You are <b>worth it</b>. Worth the good days, the big dreams, the second chances, and every sweet thing coming your way.',
+    'Always remember that you are <b>special</b>. You are special because you are you, and you never have to prove it crizel.',
+    'You are <b>worth it</b>. Worth the good days, the big dreams, and every sweet thing coming your way kahit di ko man naparamdam nun.',
     'You <b>matter</b>, more than you probably realize. Some people make a room calmer, like a warm cup of matcha. Some make it brighter, like a spell that actually works. You do both.',
-    'So on the days when everything feels heavy, come back to this. You are loved, you are enough, and you can do hard things. Even heroes need a reminder sometimes.',
+    'So on the days when everything feels heavy, come back to this. You are loved, you are enough.',
     'Now make a wish. Take your time.'
   ];
   var linesBox = $('lines');
@@ -671,7 +671,7 @@ h1 {
   }
   function finish() {
     G.done = true; T.h = 1;
-    setMsg('Ready! Cheers, ' + NAME + '. Perfect ang timpla mo.');
+    setMsg('Ready! Cheers, ' + NAME + '. Perfect ang timpla mo galing mo talaga ^^.');
     var r = gStage.getBoundingClientRect();
     burst(r.left + r.width / 2, r.top + r.height * 0.4, reduce ? 20 : 110, 360);
     resetWhiskPos();
@@ -697,7 +697,7 @@ h1 {
       if (G.scoops >= 3) { G.step = 1; setMsg('Now pour the hot water. 3 pours.'); } else { setMsg('Scoop ' + G.scoops + ' of 3.'); }
     } else if (G.step === 1) {
       G.pours++; T.l = G.pours / 3; pourFx(r);
-      if (G.pours >= 3) { G.step = 2; setMsg('Whisk it! Drag your finger around the bowl in circles.'); } else { setMsg('Pour ' + G.pours + ' of 3.'); }
+      if (G.pours >= 3) { G.step = 2; setMsg('Whisk it! Drag your finger around the bowl in circles iikot ikot mo yung whisl.'); } else { setMsg('Pour ' + G.pours + ' of 3.'); }
     } else if (G.step === 2) {
       spawn(r.left + r.width / 2, r.top + r.height * 0.36, (Math.random() - 0.5) * 80, -60, 0.6, 8, 'matcha', 120);
       addWhisk(0.1);
